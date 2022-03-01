@@ -27,13 +27,13 @@ public abstract class BaseTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         // TODO: Add configuration run tests for local execution
-        capabilities.setCapability("platformName", Platform.ANDROID);
-        capabilities.setCapability("automationName", "uiautomator2");
-        capabilities.setCapability("appPackage", "com.monefy.app.lite");
-        capabilities.setCapability("appActivity", "com.monefy.activities.main.MainActivity_");
-        capabilities.setCapability("fullReset", true);
-        capabilities.setCapability("deviceName", "emulator-5554");
-        capabilities.setCapability("app", "/Users/s.manjunath/Documents/Project/Monefy/com.monefy.app.lite_2021-12-17.apk");
+        // capabilities.setCapability("platformName", Platform.ANDROID);
+        // capabilities.setCapability("automationName", "uiautomator2");
+        // capabilities.setCapability("appPackage", "com.monefy.app.lite");
+        // capabilities.setCapability("appActivity", "com.monefy.activities.main.MainActivity_");
+        // capabilities.setCapability("fullReset", true);
+        // capabilities.setCapability("deviceName", "emulator-5554");
+        // capabilities.setCapability("app", "/Users/s.manjunath/Documents/Project/Monefy/com.monefy.app.lite_2021-12-17.apk");
         driver = new AndroidDriver<MobileElement>(url, capabilities);
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
     }
